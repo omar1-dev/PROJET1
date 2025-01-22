@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livre interactif</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      height: 100vh;
+    }
+    .book-container {
+      position: relative;
+      width: 80%;
+      height: 80%;
+      overflow: hidden;
+    }
+    .images {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .images img {
+      width: 100%;
+      object-fit: contain;
+    }
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: red;
+      color: white;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      padding: 0.5rem;
+      z-index: 10;
+    }
+    .arrow.left {
+      left: 10px;
+    }
+    .arrow.right {
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="book-container">
+    <button class="arrow left" onclick="prevImage()">&#8592;</button>
+    <div class="images" id="images">
+      <img src="10.jpg" alt="Page 1">
+      <img src="11.jpg" alt="Page 2">
+      <img src="12.jpg" alt="Page 3">
+    </div>
+    <button class="arrow right" onclick="nextImage()">&#8594;</button>
+  </div>
+  <script>
+    const images = document.getElementById('images');
+    let currentIndex = 0;
+
+    function updateView() {
+      const width = document.querySelector('.book-container').offsetWidth;
+      images.style.transform = `translateX(-${currentIndex * width}px)`;
+    }
+
+    function nextImage() {
+      if (currentIndex < images.children.length - 1) {
+        currentIndex++;
+        updateView();
+      }
+    }
+
+    function prevImage() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateView();
+      }
+    }
+
+    window.addEventListener('resize', updateView);
+  </script>
+</body>
+</html>

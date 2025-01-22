@@ -1,0 +1,8 @@
+Génère moi le code HTML,css,et JavaScript, permettant de créer un livre audio avec des images et des audio.
+Voici ce que j'aimerais que le livre comporte :
+-des bouton permettant d 'allez au page suivante et aussi au page précédente (attrayant et dynamique)
+-chaque page du livre devrait avoir un bouton de lecteur audio permettant de lance un audio(attrayant et dynamique)
+-une option permettant de choisir un langue(entre zarma et haoussa).
+
+
+Après donne moi des directives me permettant de concevoir ce livre avec Google site,et autre.

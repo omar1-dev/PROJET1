@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire Google avec redirection</title>
+  <script>
+    function handleFormSubmission(event) {
+      event.preventDefault(); // Empêche l'envoi du formulaire par défaut
+      // L'URL de redirection après soumission
+      window.location.href = "https://sites.google.com/view/omar-boube?usp=sharing"; // Remplacez par l'URL de votre site
+    }
+  </script>
+</head>
+<body>
+  <h1>Formulaire d'inscription</h1>
+  <p>Veuillez remplir ce formulaire pour vous inscrire à notre événement.</p>
+
+  <!-- Formulaire Google intégré -->
+  <form id="googleForm" action="https://docs.google.com/forms/d/e/1FAIpQLScznBMU3NXBwm9eoQnwU6_t5pR3utrz-TbpUzZHC2lYDboZGQ/viewform?embedded=true" method="POST" target="_blank" onsubmit="handleFormSubmission(event)">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScznBMU3NXBwm9eoQnwU6_t5pR3utrz-TbpUzZHC2lYDboZGQ/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+    <input type="submit" value="">
+  </form>
+  
+</body>
+</html>

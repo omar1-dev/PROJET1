@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livre Audio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="book-container">
+        <div class="language-selector">
+            <label for="language">Choisir une langue :</label>
+            <select id="language" onchange="changeLanguage()">
+                <option value="zarma">Zarma</option>
+                <option value="haoussa">Haoussa</option>
+            </select>
+        </div>
+        
+        <div id="book">
+            <!-- Page 1 -->
+            <div class="page active" id="page-1">
+                <img src="1.jpg" alt="Page 1">
+                <audio id="audio-page1" src="1.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page1')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page1')">⏸️ Pause</button>
+            </div>
+
+            <!-- Page 2 -->
+            <div class="page" id="page-2">
+                <img src="2.jpg" alt="Page 2">
+                <audio id="audio-page2" src="2.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page2')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page2')">⏸️ Pause</button>
+            </div>
+            
+                        <!-- Page 3 -->
+            <div class="page" id="page-3">
+                <img src="3.jpg" alt="Page 2">
+                <audio id="audio-page3" src="audio/page2_zarma.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page2')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page2')">⏸️ Pause</button>
+            </div>
+            
+            <!-- Page 2 -->
+            <div class="page" id="page-4">
+                <img src="4.jpg" alt="Page 2">
+                <audio id="audio-page2" src="audio/page2_zarma.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page2')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page2')">⏸️ Pause</button>
+            </div>
+        
+        
+            <!-- Page 2 -->
+            <div class="page" id="page-5">
+                <img src="5.jpg" alt="Page 2">
+                <audio id="audio-page2" src="audio/page2_zarma.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page2')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page2')">⏸️ Pause</button>
+            </div>
+            
+            <!-- Page 2 -->
+            <div class="page" id="page-6">
+                <img src="6.jpg" alt="Page 2">
+                <audio id="audio-page2" src="audio/page2_zarma.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page2')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page2')">⏸️ Pause</button>
+            </div>
+            
+            
+            <!-- Page 2 -->
+            <div class="page" id="page-7">
+                <img src="7.jpg" alt="Page 2">
+                <audio id="audio-page2" src="audio/page2_zarma.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page2')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page2')">⏸️ Pause</button>
+            </div>
+            
+            <!-- Page 2 -->
+            <div class="page" id="page-8">
+                <img src="8.jpg" alt="Page 2">
+                <audio id="audio-page2" src="audio/page2_zarma.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page2')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page2')">⏸️ Pause</button>
+            </div>
+                       <!-- Page 2 -->
+            <div class="page" id="page-9">
+                <img src="9.jpg" alt="Page 2">
+                <audio id="audio-page2" src="audio/page2_zarma.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page2')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page2')">⏸️ Pause</button>
+            </div>
+        
+        
+            <!-- Page 2 -->
+            <div class="page" id="page-10">
+                <img src="10.jpg" alt="Page 2">
+                <audio id="audio-page2" src="audio/page2_zarma.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page2')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page2')">⏸️ Pause</button>
+            </div>
+            
+            <!-- Page 2 -->
+            <div class="page" id="page-11">
+                <img src="11.jpg" alt="Page 2">
+                <audio id="audio-page2" src="audio/.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page2')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page2')">⏸️ Pause</button>
+            </div>
+            
+            
+            <!-- Page 2 -->
+            <div class="page" id="page-12">
+                <img src="12.jpg" alt="Page 2">
+                <audio id="audio-page2" src="audio/page2_zarma.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page2')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page2')">⏸️ Pause</button>
+            </div>
+            
+            <!-- Page 2 -->
+            <div class="page" id="page-13">
+                <img src="13.jpg" alt="Page 2">
+                <audio id="audio-page2" src="audio/page2_zarma.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page2')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page2')">⏸️ Pause</button>
+            </div>
+            
+            <!-- Page 2 -->
+            <div class="page" id="page-14">
+                <img src="14.jpg" alt="Page 2">
+                <audio id="audio-page2" src="audio/page2_zarma.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page2')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page2')">⏸️ Pause</button>
+            </div>
+        
+        
+            <!-- Page 2 -->
+            <div class="page" id="page-15">
+                <img src="15.jpg" alt="Page 2">
+                <audio id="audio-page2" src="audio/page2_zarma.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page2')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page2')">⏸️ Pause</button>
+            </div>
+            
+            <!-- Page 2 -->
+            <div class="page" id="page-16">
+                <img src="16.jpg" alt="Page 2">
+                <audio id="audio-page2" src="audio/page2_zarma.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page2')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page2')">⏸️ Pause</button>
+            </div>
+            
+            
+            <!-- Page 2 -->
+            <div class="page" id="page-17">
+                <img src="17.jpg" alt="Page 2">
+                <audio id="audio-page2" src="audio/page2_zarma.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page2')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page2')">⏸️ Pause</button>
+            </div>
+            
+            <!-- Page 2 -->
+            <div class="page" id="page-18">
+                <img src="18.jpg" alt="Page 2">
+                <audio id="audio-page2" src="audio/page2_zarma.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page2')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page2')">⏸️ Pause</button>
+            </div>
+            
+                        <!-- Page 2 -->
+            <div class="page" id="page-19">
+                <img src="19.jpg" alt="Page 2">
+                <audio id="audio-page2" src="audio/page2_zarma.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page2')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page2')">⏸️ Pause</button>
+            </div>
+        
+        
+            <!-- Page 2 -->
+            <div class="page" id="page-20">
+                <img src="20.jpg" alt="Page 2">
+                <audio id="audio-page2" src="audio/page2_zarma.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page2')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page2')">⏸️ Pause</button>
+            </div>
+            
+            <!-- Page 2 -->
+            <div class="page" id="page-2">
+                <img src="2.jpg" alt="Page 2">
+                <audio id="audio-page2" src="audio/page2_zarma.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page2')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page2')">⏸️ Pause</button>
+            </div>
+            
+            
+            <!-- Page 2 -->
+            <div class="page" id="page-2">
+                <img src="2.jpg" alt="Page 2">
+                <audio id="audio-page2" src="audio/page2_zarma.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page2')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page2')">⏸️ Pause</button>
+            </div>
+            
+            <!-- Page 2 -->
+            <div class="page" id="page-2">
+                <img src="2.jpg" alt="Page 2">
+                <audio id="audio-page2" src="audio/page2_zarma.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page2')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page2')">⏸️ Pause</button>
+            </div>
+            
+                        <!-- Page 2 -->
+            <div class="page" id="page-2">
+                <img src="2.jpg" alt="Page 2">
+                <audio id="audio-page2" src="audio/page2_zarma.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page2')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page2')">⏸️ Pause</button>
+            </div>
+        
+        
+            <!-- Page 2 -->
+            <div class="page" id="page-2">
+                <img src="2.jpg" alt="Page 2">
+                <audio id="audio-page2" src="audio/page2_zarma.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page2')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page2')">⏸️ Pause</button>
+            </div>
+            
+            <!-- Page 2 -->
+            <div class="page" id="page-2">
+                <img src="2.jpg" alt="Page 2">
+                <audio id="audio-page2" src="audio/page2_zarma.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page2')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page2')">⏸️ Pause</button>
+            </div>
+            
+            
+            <!-- Page 2 -->
+            <div class="page" id="page-2">
+                <img src="2.jpg" alt="Page 2">
+                <audio id="audio-page2" src="audio/page2_zarma.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page2')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page2')">⏸️ Pause</button>
+            </div>
+            
+            <!-- Page 2 -->
+            <div class="page" id="page-2">
+                <img src="2.jpg" alt="Page 2">
+                <audio id="audio-page2" src="audio/page2_zarma.mp3"></audio>
+                <button class="audio-btn" onclick="playAudio('audio-page2')">▶️ Écouter</button>
+                <button class="audio-btn pause" onclick="pauseAudio('audio-page2')">⏸️ Pause</button>
+            </div>
+            
+        </div>
+
+        <div class="controls">
+            <button id="prevBtn" onclick="prevPage()">← Page précédente</button>
+            <button id="nextBtn" onclick="nextPage()">Page suivante →</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
